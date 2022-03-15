@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/fonts/font.css">
     <title>Document</title>
 </head>
-<body class="flex items-center bg-[url(../images/b4.webp)] bg-no-repeat bg-cover h-screen w-screen font-yekb">
+<body class="flex items-center bg-[url(../images/b1.webp)] bg-no-repeat bg-cover h-screen w-screen font-yekb">
     <div class="container backdrop-blur bg-black/40 h-[90vh] w-[95vw] rounded-2xl overflow-y-hidden">
         <!-- ................HEADER............... -->
         <header>
@@ -121,6 +121,11 @@
                         </li></a>
                     </ul>
                 </div>
+                <!-- ................THIRD CATEGORY............... -->
+                <div class="navItem">
+
+                </div>
+
                 
             </div>
             <!-- ................MAIN BOX............... -->
@@ -194,11 +199,15 @@
                             </div> -->
                         </div>
                     </section>
+                    
+
+                    
+
                     <!-- ................MAHBOB SEC............... -->
                     <section class="mt-5">
                         <div id="productSec" class="">
                             <!-- grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 -->
-                            <h2 class="flex gap-2 p-2 text-xl font-bold">
+                            <h2 class="flex items-center gap-2 p-2 text-xl font-bold">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                   </svg>
@@ -479,9 +488,302 @@
                             
                         </div>
                     </section>
-                    <!-- ................VIP SEC............... -->
+
+                    <!-- ................3COL SEC............... -->
                     <section class="mt-5">
-                        <h2 class="flex gap-2 p-2 text-xl font-bold">
+
+                        <div id="row" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                             <!-- ................FIRST COL............... -->
+                         <div id="col1" class="">
+                             <h2 class="flex items-center gap-2 p-2 text-base font-bold">
+                                 <svg 
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 class="h-7 w-7">
+                                 <image  x="0px" y="0px" class="h-7 w-7"  xlink:href="data:img/png;base64,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" />
+                                 </svg>
+                                 دوره ها در یک نگاه
+                             </h2>
+                             <div id="producList">
+                                 <div id="proLisCol" class="bg-white/30 rounded-lg divide-y divide-gray-400 h-52 overflow-y-hidden overflow-y-scroll scroll1">
+                                     
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     
+                                     
+                                     
+ 
+                                 </div>
+                             </div>
+ 
+                         </div>
+                         <!-- ................SECOUND COL............... -->
+                         <div id="col2">
+                             <h2 class="flex items-center gap-2 p-2 text-base font-bold">
+                                 <svg 
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     class="h-8 w-8">
+                                 <image  x="0px" y="0px" class="h-8 w-8"  xlink:href="data:img/png;base64,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" />
+                                 </svg>
+                                 معرفی اساتید
+                             </h2>
+                             <div id="producList">
+                                 <div id="proLisCol" class="bg-white/30 rounded-lg divide-y divide-gray-400 h-52 overflow-y-hidden overflow-y-scroll scroll1">
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     
+ 
+                                 </div>
+                             </div>
+ 
+                         </div>
+                         <!-- ................THIRD COL............... -->
+                         <div id="col3">
+                             <h2 class="flex items-center gap-2 p-2 text-base font-bold">
+                                 <svg 
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     class="h-7 w-7">
+                                     <image  x="0px" y="0px" class="h-7 w-7"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAACzCAQAAAB1Y9vjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmAw8QOAQf3uMrAAAU5UlEQVR42uVdZ4AVRdY9MwwDSBriACKKgIAIO4pIEAUTqCgmXAUTglmRRRdxVyXoKi5+gi6LoqIuioqiq3woZlAJougikkWQJEoasgzx7I+B4c1Mn+7q7nqvp91TP2Dq1g11b1e/6uq61WnE7wg1UR5bsBN7ojbEHBlRG2AJbXEC6qARKiAXW7EWs/AtfovaKBPEPwAt0Q1d0LxY/Rp8gRfxSdTmeYJxLg35Ot3xGS+I3ErXErkBIUo//kYTjGZa5LbKkhbbH+EXcL1x2+9xBRZHbbAz4hmAdHyMM31xbEJLrIzabOeuxBGv+3Q/UA2fo0rUZjshjgEYiG4BuI7GB1Eb7oT43YKaYFFg3lsxOmrziyJ+AZiKjoF581AXm6LuQGHE7RZ0Vgj3A2XxcNQdKIq4jYBJuMCFSuSiPMq6SsjG+qg7kYh4jYCq6Cxpy3EnmqIxGuNqTHeRcXfUnSiMeI2AazFWUD5F10KLb4MxSLT8DTVCL9N1QAukYR6mWuhT1I/ivspjYrFhqUPb5+TSxF2hbOjAbwskzWansH2K2qX+yiThUqcFt0zuEK1/CbE2dF4xaZf/LwVgvqND1wmH/l2OgesC6s/iHgdpR4XpU7x+hJ3fXiyG8w/ZMOwXcu4LqL8PSjvUhvpZj1cAdjvWqmnnJrwkKI1cJ7MavR1rO4TpUrwCcMCxtikqivaPSkn3B9DeDkc71lcO06V4BeBHx9qK6C7a/4CJgtIabX1rV+8f1obpUrwC8I2ov1dyDJGUQfCHTFwmKFPCdCleAfha1NfHxYIyBzMFpTOa+NJ9kXyf8EqYLsUrAH+QFH09PyQp/uZC6gb0JZaE6lPkc3s/ZanLq/fTJNc8yVPbWHNN7hMybg7XpziNgFPR0IU6WFL0GBhgrLsHSjnW78EbIXsV+VVtXp6hO5pJzrWCYycrGOr+Rkj4d9hexWcEZOJyjxb6d2CoqD8CfY10N0dLQXkhdL8iv65Ny2X0Rj3BW5a5gmOD0cLcMMG9nhn/OyOgt0Eb9TyQh5GCUh03Gsi9StSPx76w3YrLC5m6WIU0z1Z7URNbHCnV8YtYyluOBh5Sz5JbfFvJR0NjxGUE3G7gfqC0vKdvxBhBORaXeEhVTwCLw7sfMfkNKM2NBr8AJLmZZYWMepJnrqvuKvLFzr02+haPEdAd1QxbZuEGQVmFCYLSAqe5SOyM8oISagmiAJFf3SZlseH1T5KrpZQcyfOpi241A5pip29xGAFXo7GP1nXl88J3chfDmWgm5am3amNhB5Ff3V4lg+t9XP8kuUDKOk3yvCl5rnRsn8eKdvoXtXu9yyCf7ifJs6W07yRPXcFRkVsdWo+01b+o3etVqshVyH28h9sE7QspTz9Pj5I8lxZru854DSn2AZgsHfYhwbck9SQpcbng2M0syXMTdyW0nM+G9npYarCl35Kk4Cb0k7RrsAZr0UtQa2G8oOxEV8f6Utgrf6S/xavYiVLYjP/gSdwQYIt7I3TDOWiAXGwrQon8GtelLg/IK/zzg22+li2OFVIzuFlwbGbppPSjE9/m/oM6fuOwwtSonexWZlMj52CbLrLFs1LuQMlzm/U+dOWUYlrei0cARrm4//mEdj+INvtYQ0iuLPOLf7Zof1neKC+hgSU/AH1c3L+z0By8t2w3VEp/QvJcYcX6ShzAFS492HF4FhW1o51LF7qhZ6G26fxVtNsmF+ZqS9kLQttej0O4jl7oWJIDcJLLjy85q1j7P8u2/aSO1yTPmSEsz+GzhscnXFZyA5Ajl39Jci/rFOM4wiUTQGlpIjXMDGh3G443cn0+WpbUALTidlfDr3Tkeky215kAH0ieHN9Wn833fDif/JnpJTMApzomQBzGK4Ivu2CeXRSLpa62Uss7Pq3Wt0CFHoe5o3Z5YrnQw/3LXPYgPC+5zpU830qe+j6svsC3+0ck8kft9MOlv4fZeTzGhbuR5JslefRc63ljq9O5ypfzF/HGwhKidvuh8oqn6ad5SJgkOdtIHr3XtJqh3e18OH82ry4uIWrHg2BjufHvMHp6SmkleSdLnuslz8OGtvcydP4UlU0ZtfPBv3C3p/kDjSRNl/zHCY40bhAc21nOSOeV9MarPFVLiNb5OfzcoAMPGkrrLCW8LHnukjxm6dwNXC3fyxe8JrXROb8qHzEavI/4kLlQSqkpOMoVetWSiPWGOicK/nUcygbe/NE4P4P95JbxwhjmS253KedxyfN/kucqI501HXqykv1ZyczmKJx/O380cj7Z37d0nQlQXjpQ4QdDnccUupF+z9vkImDkAajCfsbON70CC5e+UtpfJc8YyXOesd7zOIIvc4TLY1/kATiWf/exw2eb57zfuZSXOyU2uFim8FXy/ZIa5zfjs3K1xgkzQhyAMURKvUHyvC95WsU/AB34qg/Xk+SjofRVkaFeJnlOlra8H+8AXMLPfDp/Ey8JrVUn810seWZKnuNC2xNJANJ4lUunFF4Jd/bOwVJfyp8jeTpJnrHxC0AW+3OJb+ev5EXWLNA75vSigLY4O04ByOYQ37uZSXKU4dqLWWkh9ehMAP0QNzwuAWjGJxx3EpvAdL3HtOg1puMlzy+CI08+xJWgALTnGwFdfwh1LVmSXzpIPW9Injslzz0lOwBn852QzifJf1ju2lypSR3RUVZuCFh/+CV6yQpAGntylgXnk+Rue3vuCYKXSE06E+AhydM7WQEInqidiV7o6/PQIwDIk4fs3W/5aO3VqOtYvwc1sdWRkoWN4lSUFahvqLU5mgFYgHmG7QPFrTbvd937qLCcfXg0VwtqruXt4TdLO/QbNn3e7oUGGnP4cUH72bxbbpEPdQuqyyc9Nk85YzZ7MpMgeL9sc4vVAGTIIzpy5QaXY6Rt33jqa1fs5epevsMr3dP5/HbqXrna6Ibp7JYgo4J8C7XKagDcQq0zAfRDXHtXXRW4RfD9yqf1jlM/3anPGQGc/6ZDzuLjsnX4laDEkiW3eq2RPCdI2z5x1eW1P24eH3R6P2zembbc5Nv5Y/gHR1m1JMd3lsfASKnpUsmjL7PjXTRNoQmm8vbCTzymHcnx2DZYFLkc7rqOOE5ydrQaAB3qeZLnDMkz3kXT98a+2cW3/G5PryF/zpywggPkLoRD5TjJbekMhoKivzapQ60f4vTzut+F9+lsbB6A6cZiF/L2g3Mdr6IzgJtbDcDxUs80yXOp5NEZ8jr1T2E7jzULwE2GAj9jdx+OOUXKedOHFJPykdTUQvKoLbd5rCw4qhrmxiRiukkAMowmnpNczmdQRef41vMty620lnreljy3Sh79EKd/OzRyvM2/zUPEAY5z2/voUs6VMp+yPAbmSE3HyMtOndG1xeUW28pltDnjDm/j3Q5L2s7HQ70zVXuE9rCK1QBcJHvwjOQZJHncn9fbcjh/Mg7APV6mN3VhHuXj7GXncq2U/ZDlMaBCfYBVBUcW8wTPT57aSrMrxxndurt6idLPd30tuCVNZtRuNZxLmRadCaBDrR/iuhnprMNbPXZ/b2N5LyEvC9YJlhzTTxrXx/IYUPf07TxCcNSW+cp+0rlbcIjctd3bexakHi+aWnJLGZnju8aShkPlXhnqOyWPzvz1m859NkcXy+h/lPAKQLo4CmOJRccMk53081ThXcpxp9Dzq+TRC3NTA1hQid05gWt5gFv40aFNYl5MCxzVf2bRMTXkoWQLLY8BnQnQQ/LoaeVJAa2oyEaJO428ms9xVL7IqmNesDbQvUKtECSd+207VrkR63K4mIrtZSOLjtFvoaZbDQD4ktSkP8ppJ53bdwBKc6jroRmjbCgvKDrH92SrenRK3ZeS52LJ84wNm5yrO7mku+Vjn8sZg/7LiVLPJKsBgMuhGqdIHv9ncoUMwD00wRCrjtEL3lYGekHRa7A61DoZ2zSd21cAXjRyP5lr9Vn1TKnnBasBAL+UmvTvmkrn3uInHc8sAPokqeK4w6pj1E1vv+Xt4ToT4F+S5y+SJ/SCTOE/n/bhfrfzqIIUnfQfLmWpePlBalKhrih3QoX2QeIfd/hyP0n+0apj1FuoHXK1JljRa7CPSR79EHeNrQDoE3c05lt1jD6q8s+Wx4DKBNAfdtO7K0Kes3j4v/pgdzecY9EtmS57y+xuD+8r+6Nz88dKHt/J2U4BuC6Q+8kZVh2jc3xDDvQipYy8p2+QodYbaWaFsSX/nwyPrxTdJ88EIU+06JhK8uygpVYDAA6V/eklefTzeoh07vx/rnJx/ip2oNsHcCZadYzO8T3fqp5qcg1Wh7qNtO3/wwZAn1O+oOD0tK9kG4NTcYyL/trX15bHgA61zgTQD3GBtyaAYEMpdjurFzTVm0hetOqYCVJPG0MJZVmd2azOGqzJWnJeo9O5Z0vJ+kyul4L2N41AfwwT6TOd8HHCX8twrGOrA6iOzdYSi06QyT0f4DzH+uo4EsehAeqjFrJQCVmohAzsB5CONGxHLjZjMzbgJyzBUqxB7kG+8bhCaGqPGYKySCRlETUCfFcjn5Pviqh+XCRaPWX8hwaNv2PRG70T30Snsxmv41OcLSevzsjlTI5id9ZiEzkX+kjado2UGzC7B8yQT6BFh3y63ESy02qee0fZyfyji6uyK58LcBhCUZunuuz5VpkAafxZcEwO1lv9ksLpcBd9xuDdVsfAHKElj7dybIBEEf94Vdqm0rn3BNumBrYXAp2WgY+Qu8V+DaJcFpOvZycbdYRt5eSOt7OC9DUdNcSPw2KHut/wpGidjWsD/QQ54y38ZFFaMKivc+/C04JSJ4iadJQRlG2OtY9BZXYPtNr9YeFFhMSNqCwo6vvaDYOoSReZ4RCO3ogXRfsGONdi90fjPxalBUFZ+XXu9ZIjANLFlQ7UE/WPSFmDLXa/GfIsSguGO8VX6KuI9oGeA9KxQVCaivpleFdQWqO1lY63wwTMRzsrssKgmvg699mi/Y5AWlhbzGxy5TFFehPJhxbmPx9GPf1JwFoHCzPlNLhrkB6nUT9e98BrImpfoo2gNMKPga+4XuiDnMDc+diJLdiIzdiP/SiFA0hDdVRFVVQIKO/fuKxIzWSxIJKHevJu4gbqpOkfZdzOkddMsEWpLPb19d34wtjEaRzNW3kGT2Ath2fyTGazKU/nLRzNGb4f4z5h6wJJrThNtgu4jRIEe0ihgyXjIslTy6cJ9fio/BaeO/L4KQewXcKKrUmpzo4c7POYqakcyac8sl0eCB6AOi7HCqtknMslxwgf6o/jSIPvZxTHNo7jlSFPmWvGfvwkUOCdEHibYv4/E11EqxDoMwbNjh47neNcP1mo8BXv5JGhXJ9YTuBAlyRWcwROrM3/p72r8EdYxoH1Qtl+gKfaLgknS/nBqzzdmusTSweOlKucZvB74y0SALesdZJcytuLqKjCXvL63eSiMI3d+UWADubxOZeDBWyU8nw0sPtDHOl36NC+dvId0CHswLf4HhuxG7XQEG1Q3aXtIDzoUFsBN+JmNPY9UVuG1zAGKwNOJP3gHVwUgGs8uofQWRCL0aGGYFEU/WpWDd5n+NWY4ng6qVd+YskIsD1tGkuF0Xn4v6UMPkPsB4+z4UHJORzu67yhotjuc6IZppTz+ev0bliNiX+c6Eu1N/bza75vZY7xWNhu+irPG9tlIVGr8J8m34WLAjuSeXy2Q7nY5UHzEL63sy+2aEXvqH0tcG9KA5D/pTOdHzmXf7KlqfjRxVfgFfmSJpnYhscxCR+KV6TrUBuBT1kOjI7ohOZojloAMrEbK7Ac32ESZlnU4RCVVqG3fPjFSt53MDtFH1zQM8Vj4HApy3o8hk0sn+MlbkH5pQyfSJnz5/CGhCftGvJ4zGXJ6H70RZNau2zHLoq53BvI+TMdTmnQm2YDvfAo6cWd3J7PeHwRZicn8HyCnXx9qI0k32RnR536u3azbXe+JBTvJlXYjSM5s0gKx07O4Vhen/DZqZac7ysAF0iNem3WdH90jIr5Bxwqow5qojQykIdN2IhfirVIxwPoj/KG8pajgaDkYI6gTMFZFucfJQOWI1qPf+MywzGgT17T756aRH3FRjcCzFEKHXE6ctAAlQHsQiPRbq58BX+W3H32Gnqk/BpNLpIa3/Isz1IuH7jqIDnV78kBi2/DSkRJhZIgJ691kzz/jNpldksybkHFMQVnCEoO5grKKhzlWL8XVQPuQSuRSE+JlsGS8oCkqP3RpeWm2VgiNSMA+AYtBaU+VjjWZ2IdshwpucjGvtSYnXykZgS47alWiRB7MFxQqopNs7FEqkaATnLdh5oiybUyNooN4mvE70MMkaoRAAwV9Rm4S1C2Yoyg1MXFKbM7yUjdCAA2iK0sW5GN3Y6Uo7BKyJqHFqkzPJlI3QgARoj6yrhFUFZjvKA0R4cUWp5EpHIEZOFnHOFI+Vl89xQ4HgsE5XN0TJ3pyUMqR8AWjBaUI+XesoX4TFA6oHkKbU8aUjkCgFoOi9j5WIhmgtIe0wRlAv6YSuOTg1SOAOBXjBOU49FZUKbLtwOXoVpKrU8KUhsAPRl1S/R+UNSno0uKrU8CUh2AhZgsKO1wsqC8Iyejl6fY+iQg1QEAHpKUQZIyRNSfIg9aiA1S+yOcj6/RSlAaYpmzlfgF2Q71+9GoBBzrEQqpHwFui9P3i3ridcf6UmJ9KUaIIgCTsURQrpV5N+ocuWzEHFEEAHhYWjNAUNSdUh01EhtEE4DXZFL/Lch0rFdLb/ZOa4wI0QRgn3weqIC7Ha1USxVbI7HfIqKYBQFAOawXB2jsQvNic6GnxXrpWjQoAecKhUI0IwDYhX8KSjlMQ9tCNUPlcvW0uLs/uhEAZGOtS/j/hYn4EeVwEnrLpwbgDoyKynxbiC4AwBj0DsV/ALXl+W2xQVS3IEAvsplidPzdH20AVuGJUPx/i9B2a4gyAEB/rAvMO0i+3IkVovwNAIDz8V4gvhloH63hthDtCAAmy11BbsjFBRHbbQ1RBwAYIVeGFFajPbZEbbYtRH0Lykcf/MO47Rx0wsaoDbaH6EcAAIxEWywyajkMrX9P7kdKMmTMShnezeWuSX2fJpzg+bspJeMWdAiZ6IkuaIOaRernYzImYmbU5iUDJSsA+aiMU9AYlVAJmViDlVgudwb9DlASAwCUxtGogIrIxFqsjf+avxv+CwfI3ZQpGqxQAAAAAElFTkSuQmCC" />
+                                     </svg>
+                                 اخبار
+                             </h2>
+                             <div id="producList">
+                                 <div id="proLisCol" class="bg-white/30 rounded-lg divide-y divide-gray-400 h-52 overflow-y-hidden overflow-y-scroll scroll1">
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     <!-- ................ITEM NAME............... -->
+                                     <div id="prodTitle" class="flex gap-2 p-1">
+                                         <button class="flex justify-between w-full items-center">
+                                             <div class="flex items-center gap-2">
+                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                     <img src="./assets/images/1 (1).jpg" alt="">
+                                                 </div></a>
+                                                 <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                             </div>
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                             </svg>
+                                         </button>
+                                     </div>
+                                     
+ 
+                                 </div>
+                             </div>
+ 
+                         </div>
+                        </div>
+ 
+                     </section>
+
+                    <!-- ................MAREFAT SEC............... -->
+                    <section class="mt-5">
+                        <h2 class="flex items-center gap-2 p-2 text-xl font-bold">
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -763,9 +1065,9 @@
                             <!-- <div class="swiper-pagination"></div> -->
                         </div>
                     </section>
-                    <!-- ................VIP SEC............... -->
+                    <!-- ................HEKMAT SEC............... -->
                     <section class="mt-5">
-                        <h2 class="flex gap-2 p-2 text-xl font-bold">
+                        <h2 class="flex items-center gap-2 p-2 text-xl font-bold">
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1047,6 +1349,119 @@
                             <!-- <div class="swiper-pagination"></div> -->
                         </div>
                     </section>
+                    <!-- ................PARTNER SEC............... -->
+                    <section class="mt-5">
+                        <h2 class="flex items-center gap-2 p-2 text-xl font-bold">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                class="h-7 w-7">
+                                <image  x="0px" y="0px" class="h-7 w-7"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACiCAQAAACuPkopAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmAw8PKA07uq2TAAAE00lEQVR42u3dTWgcZQDG8f+OUamiRVuxVKxIW7zowYgFW8SIWNEWycXixYNHBUGqtVV6KvVbr9qLXlTaW0ktYkmbUj+2B0EKQg6WUC010vqBUrSYJh0Pq+hhZ2f33Zn3fbL7/I47mbzzzj+ZSSaT2UYOAKOMcwf2r7McYn+KgUcAWMbjPMptqfeCkF9Yzjm+jD9wI4fbOcTK1HtA0nbeiD1kI7+GUyxLPXNZm/gk7oAZO5yjg3fI4g6Y8VjqOUu7hbvjDphxU+o5i4v8o05GnnrG9n8Zl1JvgrjI+yfyKcvKOIgYBxEzUvD6DxxNvWmRreae1JsAxUGaPJF60yLbxMHUmwDFh6yrU29YdDem3oAWn0PEOIgYBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGIcpMzZuMON9P8pBtyDNLr8ss3ImeHb/oZzkDLb2NbTxzd5nQPhw/mQVbX1TPBc+OoOUoe3GAtd1UHq8XLoig5Sj/Wht+g6SF1uDlvNQeoSeAuqg9Ql8CZ2BxHjIGIcRIwvnZTZy2cd7uP8gy3cX+VwDlLmPY50XL602iA+ZJVZUbL8+mqHc5AyjbjDOYgYBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGIcpC6nw1bz5fe6vMAMl3f1kRnznOQw8+Ag9dna48efZBcf+pClYy0fsNVBtLzNqINo2eEgWu51EC1LHUTLgoNoyR1EjIOIcRAxvnRSl+eZ5orCpRfZxV3tFjhIXfYy23H5k+2D+JBVl7J/+ryq/csOIsZBxDiIGAcR4yBiHESMg4hxEDEOIsZBxDiIGAcR4yBiHESMg4hxEDEOIsZBxDiIGAcR4yBiioL8mXrDojuXegNaiu7LWs14l/+yOBjmeCj1JrQUBbmT/ak3bTj5HCLGQcQ4iJgs9mNQF53oj4m9LPWMxUXePxm/p56xuMhvLJlxNPWMpf3FF3EHzHg19Zyl7eZ83AEzvuGp1LOW9Sm7Yw+ZAXsY50Tqucv5lVd4OP6wrUsnE0xwH2tYwkJXa82xlu1tl0yyjyvjT6NSDeAMTX5OMfh/17KOcayH9VYUBJni/RTTGByhv6kXvW3idakntNj50okYBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGKqDpKnnlB0Fc+46iC/xdoPMiqecdXPXNzMJZYMza1FORfYXO2nrDrIBjZE2x0DySd1MQ4ixkHEhAYZltN2uMA9FBrE31llIgcJfNvEoZGH7qHQILM93TQ0fD7nx7AVww89L6Wes7QXQ1cMD9L0PcGFnqYZumo/J+c9bGSKudSzlzLHFBt5N/wT9HfpZJJJVnEreZfXPOd5hJ1tl7zGgUX/XiYNGpzq98ed/nfC6Z424dqC149zvLIds6jF/n3ihoLXl6feESr8C54YBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGJUggzfPcEFVIIkeYxFUgVPRlb5G8ROtgzVc4IvFt1yqxJkHetSb4IGlUOW/cNBxDiImNhB/AXQWRZ7B/km7c4asYNMp56xuO9jB/mKmdRzlravEf2axQMcTj1rWbOsiX+SPcIzqect6jvGuBD/OwRglGcZY2XXt6AOtowFpvmYNzmf6tLJ13zET6xyEAAy5jnBwdZDzf8GSKyaJjEkaSUAAAAASUVORK5CYII=" />
+                                </svg>
+                            لوگوی همکاران
+                        </h2>
+
+                        <div id="partnerSlider" class="swiper">
+                            <div class="swiper-wrapper">
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/1.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/2.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/3.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/4.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/5.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/6.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/7.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/12.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/8.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/10.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/9.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/11.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+                                <!-- ................start SLIDE............... -->
+                                <div class="swiper-slide">
+                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                        <img src="./assets/images/logo/13.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ................End SLIDE............... -->
+
+                            </div>
+                            <div class="swiper-button-next text-white "></div>
+                            <div class="swiper-button-prev text-white "></div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </section>
+
 
                 </div>
                 
@@ -1129,6 +1544,37 @@
           },
           1024: {
             slidesPerView: 3,
+            spaceBetween: 8,
+          },
+        },
+          mousewheel: true,
+          keyboard: true,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper("#partnerSlider", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop: true,
+          mousewheel: true,
+          breakpoints: {
+          300: {
+            slidesPerView: 3,
+            spaceBetween: 8,
+          },
+          768: {
+            slidesPerView: 6,
+            spaceBetween: 8,
+          },
+          1024: {
+            slidesPerView: 8,
+            spaceBetween: 8,
+          },
+          1280: {
+            slidesPerView: 10,
             spaceBetween: 8,
           },
         },
