@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./assets/fonts/font.css">
     <title>Document</title>
 </head>
-<body class="flex items-center bg-[url(../images/b1.webp)] bg-no-repeat bg-cover h-screen w-screen font-yekb">
-    <div class="container backdrop-blur bg-black/40 h-[90vh] w-[95vw] rounded-2xl overflow-y-hidden">
+<body class="flex items-center bg-[url(../images/b1.webp)] dark:bg-[url(../images/b5.webp)] bg-no-repeat bg-cover h-screen w-screen font-yekb">
+    <div class="container backdrop-blur bg-white/50 dark:bg-black/40 h-[90vh] w-[95vw] rounded-2xl overflow-y-hidden">
         <!-- ................HEADER............... -->
         <header>
-            <div id="header" class="flex items-center justify-between py-1 px-3 border-b border-gray-600 text-white ">
+            <div id="header" class="flex items-center justify-between py-1 px-3 border-b dark:border-gray-600 dark:text-white border-white text-black">
                 <!-- ................MOBILE MENU ICON............... -->
                 <div id="mobmenu" class="md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 border p-1 rounded-md" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -46,12 +46,12 @@
                     </div>
                     <div id="logout" class="hidden md:block">
                         <a href="" class="">ثبت نام</a>
-                        <a href="" class="bg-blue-600 px-4 py-1 rounded-md mr-2">ورود</a>
+                        <a href="" class="bg-blue-600 px-4 py-1 rounded-md mr-2 text-white shadow-lg">ورود</a>
                     </div>
                 </div>
             </div>
         </header>
-        <main class="grid grid-cols-12 text-white h-full">
+        <main class="grid grid-cols-12 text-black dark:text-white h-full">
 
 
             <!-- ................SIDE BAR............... -->
@@ -136,80 +136,97 @@
 
 
                 <!-- ................MAIN HEADER............... -->
-                <div id="topConHead" class="flex border-b border-gray-600">
+                <div id="topConHead" class="border-b dark:border-gray-600 border-white">
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 m-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
-                      </svg>
+                    <div id="gest" class="dark:text-white text-black">
+                        <div id="newsLine" class="p-2">
+                            <ul>
+                                <li><a href=""> خبر </a></li>
+                            </ul>
+                        </div>
+                    </div>
 
 
-                    <ul class="md:pr-3 flex flex-grow items-center justify-center gap-2">
-                        <a href=""><li class=""><div id="sideSlidBox" class="grid md:grid-cols-4 py-2 col-span-1 bg-gradient-to-br from-emerald-300 via-emerald-400 to-emerald-600 px-1 gap-1 rounded-lg h-full">
-                            <div class="right flex justify-center flex-col md:col-span-3 inline-block">
-                                <h3 class="text-base md:text-xl font-bold text-gray-900">
-    حضوری
-                                </h3>
-                            </div>
-                            <div class="left hidden md:flex justify-center flex-col md:col-span-1 inline-block">
-                                <svg class="w-6 h-full" viewBox="0 0 37 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 35.5V19.575C9.98009 13.854 13.6042 11.1946 18 9.5C23.8934 11.9255 26.9924 15.8024 28 19.575V35.5M1 41V16.5C4.46515 7.69848 10.8074 3.60715 18.5 1C28.8134 4.73148 34.2366 10.6959 36 16.5V41C29.2674 36.7801 25.6976 35.1882 18 33.5C10.5836 34.5713 6.53546 36.3367 1 41Z" stroke="black"/>
-                                </svg>
-                            </div>
-                        </div></li></a>
-
-                        <a href=""><li class=""><div id="sideSlidBox" class="grid md:grid-cols-3 py-2 col-span-1 bg-gradient-to-br from-cyan-300 via-cyan-400 to-cyan-600 px-1 gap-1 rounded-lg h-full">
-                            <div class="right flex justify-center flex-col md:col-span-2 inline-block">
-                                <h3 class="text-base md:text-xl font-bold text-gray-900">
-    مجازی
-                                </h3>
-                            </div>
-                            <div class="left hidden md:flex justify-center flex-col md:col-span-1 inline-block">
-                                <svg class="w-7 h-full" viewBox="0 0 43 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 23.5H41M14.5 32.5H17.5M17.5 32.5V27.5M17.5 32.5H26M26 32.5H29M26 32.5V27.5M40.5 23.5H42M3 28H40C41.1046 28 42 27.1046 42 26V3C42 1.89543 41.1046 1 40 1H3C1.89543 1 1 1.89543 1 3V26C1 27.1046 1.89543 28 3 28Z" stroke="black"/>
-                                    </svg>           
-                            </div>
-                        </div></li></a>
-
-                        <a href=""><li class=""><div id="sideSlidBox" class="grid md:grid-cols-4 py-2 col-span-1 bg-gradient-to-br from-purple-300 via-purple-400 to-purple-600 px-1 gap-1 rounded-lg h-full">
-                            <div class="right flex justify-center flex-col md:col-span-3 inline-block">
-                                <h3 class="text-base md:text-xl font-bold text-gray-900">
-    بین الملل
-                                </h3>
-                            </div>
-                            <div class="left hidden md:flex justify-center flex-col md:col-span-1 inline-block">
-                                <svg class="w-6 h-full" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M45.972 8.57108C41.0491 3.64825 34.3723 0.882629 27.4104 0.882629C20.4485 0.882629 13.7717 3.64825 8.84886 8.57108C3.92603 13.4939 1.16042 20.1707 1.16042 27.1326C1.16042 30.5798 1.83939 33.9933 3.15858 37.1781C4.47776 40.3629 6.41133 43.2566 8.84886 45.6942C11.2864 48.1317 14.1802 50.0653 17.365 51.3845C20.5498 52.7037 23.9632 53.3826 27.4104 53.3826C30.8576 53.3826 34.2711 52.7037 37.4559 51.3845C40.6407 50.0653 43.5344 48.1317 45.972 45.6942C48.4095 43.2566 50.3431 40.3629 51.6623 37.1781C52.9814 33.9933 53.6604 30.5798 53.6604 27.1326C53.6604 20.1707 50.8948 13.4939 45.972 8.57108ZM45.972 8.57108L50.9304 15.466H47.8271C46.28 15.466 44.7963 16.0805 43.7023 17.1745C42.6083 18.2685 41.9938 19.7522 41.9938 21.2993C41.9938 22.8464 41.3792 24.3301 40.2852 25.4241C39.1912 26.518 37.7075 27.1326 36.1604 27.1326C34.6133 27.1326 33.1296 26.518 32.0356 25.4241C30.9417 24.3301 30.3271 22.8464 30.3271 21.2993C30.3271 19.7522 29.7125 18.2685 28.6185 17.1745C27.5246 16.0805 26.0408 15.466 24.4938 15.466H23.0354C21.1015 15.466 19.2469 14.6977 17.8794 13.3303C16.512 11.9628 15.7438 10.1082 15.7438 8.1743V3.60971L20.6604 1.76526L25.6604 0.940978L31.1604 1.15176L36.1604 2.38388L41.339 4.88263L45.972 8.57108ZM1.32083 24.216H6.99375C8.54085 24.216 10.0246 24.8305 11.1185 25.9245C12.2125 27.0185 12.8271 28.5022 12.8271 30.0493V32.966C12.8271 34.5131 13.4417 35.9968 14.5356 37.0908C15.6296 38.1847 17.1133 38.7993 18.6604 38.7993C20.2075 38.7993 21.6912 39.4139 22.7852 40.5078C23.8792 41.6018 24.4938 43.0855 24.4938 44.6326V53.2222C8.30748 49.438 1.13999 40.4688 1.32083 24.216ZM36.1604 51.8893V44.6326C36.1604 43.0855 36.775 41.6018 37.869 40.5078C38.9629 39.4139 40.4467 38.7993 41.9938 38.7993H50.9304C47.097 45.7719 43.8167 48.5937 36.1604 51.8893Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>   
-                            </div>
-                        </div></li></a>
-                        
-                        <a href=""><li class=""><div id="sideSlidBox" class="grid md:grid-cols-4 py-2 col-span-1 bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-600 px-1 gap-1 rounded-lg h-full">
-                            <div class="right flex justify-center flex-col md:col-span-3 inline-block">
-                                <h3 class="text-base md:text-xl font-bold text-gray-900">
-    سازمان ها
-                                </h3>
-                            </div>
-                            <div class="left hidden md:flex justify-center flex-col md:col-span-1 inline-block">
-                                <svg class="w-5 h-full" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23 35V4.77778C23 3.77585 22.6689 2.81496 22.0795 2.10649C21.4901 1.39801 20.6907 1 19.8571 1H4.14286C3.30932 1 2.50992 1.39801 1.92052 2.10649C1.33112 2.81496 1 3.77585 1 4.77778V35M23 35H1M23 35H15.1429M1 35H8.85715M15.1429 35V25.5556C15.1429 25.0546 14.9773 24.5741 14.6826 24.2199C14.3879 23.8657 13.9882 23.6667 13.5714 23.6667H10.4286C10.0118 23.6667 9.61211 23.8657 9.31741 24.2199C9.02271 24.5741 8.85715 25.0546 8.85715 25.5556V35M15.1429 35H8.85715M6.3037 10.4034H7.87513M6.3037 17.9589H7.87513M11.3326 10.4034H12.904M11.3326 17.9589H12.904M6.3037 14.3043H7.87513M11.3326 14.3043H12.904M6.3037 7.28261H7.87513M11.3326 7.28261H12.904M15.7326 10.4034H17.304M15.7326 17.9589H17.304M15.7326 14.3043H17.304M15.7326 7.28261H17.304" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>  
-                            </div>
-                        </div></li></a>
-                    </ul>
+                    <div id="login" class="hidden flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 m-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                          </svg>
+    
+    
+                        <ul class="md:pr-3 flex flex-grow items-center justify-center gap-2">
+                            <a href=""><li class=""><div id="sideSlidBox" class="grid md:grid-cols-4 py-2 col-span-1 bg-gradient-to-br from-emerald-300 via-emerald-400 to-emerald-600 px-1 gap-1 rounded-lg h-full">
+                                <div class="right flex justify-center flex-col md:col-span-3 inline-block">
+                                    <h3 class="text-base md:text-xl font-bold text-gray-900">
+        حضوری
+                                    </h3>
+                                </div>
+                                <div class="left hidden md:flex justify-center flex-col md:col-span-1 inline-block">
+                                    <svg class="w-6 h-full" viewBox="0 0 37 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 35.5V19.575C9.98009 13.854 13.6042 11.1946 18 9.5C23.8934 11.9255 26.9924 15.8024 28 19.575V35.5M1 41V16.5C4.46515 7.69848 10.8074 3.60715 18.5 1C28.8134 4.73148 34.2366 10.6959 36 16.5V41C29.2674 36.7801 25.6976 35.1882 18 33.5C10.5836 34.5713 6.53546 36.3367 1 41Z" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </div></li></a>
+    
+                            <a href=""><li class=""><div id="sideSlidBox" class="grid md:grid-cols-3 py-2 col-span-1 bg-gradient-to-br from-cyan-300 via-cyan-400 to-cyan-600 px-1 gap-1 rounded-lg h-full">
+                                <div class="right flex justify-center flex-col md:col-span-2 inline-block">
+                                    <h3 class="text-base md:text-xl font-bold text-gray-900">
+        مجازی
+                                    </h3>
+                                </div>
+                                <div class="left hidden md:flex justify-center flex-col md:col-span-1 inline-block">
+                                    <svg class="w-7 h-full" viewBox="0 0 43 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 23.5H41M14.5 32.5H17.5M17.5 32.5V27.5M17.5 32.5H26M26 32.5H29M26 32.5V27.5M40.5 23.5H42M3 28H40C41.1046 28 42 27.1046 42 26V3C42 1.89543 41.1046 1 40 1H3C1.89543 1 1 1.89543 1 3V26C1 27.1046 1.89543 28 3 28Z" stroke="black"/>
+                                        </svg>           
+                                </div>
+                            </div></li></a>
+    
+                            <a href=""><li class=""><div id="sideSlidBox" class="grid md:grid-cols-4 py-2 col-span-1 bg-gradient-to-br from-purple-300 via-purple-400 to-purple-600 px-1 gap-1 rounded-lg h-full">
+                                <div class="right flex justify-center flex-col md:col-span-3 inline-block">
+                                    <h3 class="text-base md:text-xl font-bold text-gray-900">
+        بین الملل
+                                    </h3>
+                                </div>
+                                <div class="left hidden md:flex justify-center flex-col md:col-span-1 inline-block">
+                                    <svg class="w-6 h-full" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M45.972 8.57108C41.0491 3.64825 34.3723 0.882629 27.4104 0.882629C20.4485 0.882629 13.7717 3.64825 8.84886 8.57108C3.92603 13.4939 1.16042 20.1707 1.16042 27.1326C1.16042 30.5798 1.83939 33.9933 3.15858 37.1781C4.47776 40.3629 6.41133 43.2566 8.84886 45.6942C11.2864 48.1317 14.1802 50.0653 17.365 51.3845C20.5498 52.7037 23.9632 53.3826 27.4104 53.3826C30.8576 53.3826 34.2711 52.7037 37.4559 51.3845C40.6407 50.0653 43.5344 48.1317 45.972 45.6942C48.4095 43.2566 50.3431 40.3629 51.6623 37.1781C52.9814 33.9933 53.6604 30.5798 53.6604 27.1326C53.6604 20.1707 50.8948 13.4939 45.972 8.57108ZM45.972 8.57108L50.9304 15.466H47.8271C46.28 15.466 44.7963 16.0805 43.7023 17.1745C42.6083 18.2685 41.9938 19.7522 41.9938 21.2993C41.9938 22.8464 41.3792 24.3301 40.2852 25.4241C39.1912 26.518 37.7075 27.1326 36.1604 27.1326C34.6133 27.1326 33.1296 26.518 32.0356 25.4241C30.9417 24.3301 30.3271 22.8464 30.3271 21.2993C30.3271 19.7522 29.7125 18.2685 28.6185 17.1745C27.5246 16.0805 26.0408 15.466 24.4938 15.466H23.0354C21.1015 15.466 19.2469 14.6977 17.8794 13.3303C16.512 11.9628 15.7438 10.1082 15.7438 8.1743V3.60971L20.6604 1.76526L25.6604 0.940978L31.1604 1.15176L36.1604 2.38388L41.339 4.88263L45.972 8.57108ZM1.32083 24.216H6.99375C8.54085 24.216 10.0246 24.8305 11.1185 25.9245C12.2125 27.0185 12.8271 28.5022 12.8271 30.0493V32.966C12.8271 34.5131 13.4417 35.9968 14.5356 37.0908C15.6296 38.1847 17.1133 38.7993 18.6604 38.7993C20.2075 38.7993 21.6912 39.4139 22.7852 40.5078C23.8792 41.6018 24.4938 43.0855 24.4938 44.6326V53.2222C8.30748 49.438 1.13999 40.4688 1.32083 24.216ZM36.1604 51.8893V44.6326C36.1604 43.0855 36.775 41.6018 37.869 40.5078C38.9629 39.4139 40.4467 38.7993 41.9938 38.7993H50.9304C47.097 45.7719 43.8167 48.5937 36.1604 51.8893Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                </div>
+                            </div></li></a>
+                            
+                            <a href=""><li class=""><div id="sideSlidBox" class="grid md:grid-cols-4 py-2 col-span-1 bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-600 px-1 gap-1 rounded-lg h-full">
+                                <div class="right flex justify-center flex-col md:col-span-3 inline-block">
+                                    <h3 class="text-base md:text-xl font-bold text-gray-900">
+        سازمان ها
+                                    </h3>
+                                </div>
+                                <div class="left hidden md:flex justify-center flex-col md:col-span-1 inline-block">
+                                    <svg class="w-5 h-full" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 35V4.77778C23 3.77585 22.6689 2.81496 22.0795 2.10649C21.4901 1.39801 20.6907 1 19.8571 1H4.14286C3.30932 1 2.50992 1.39801 1.92052 2.10649C1.33112 2.81496 1 3.77585 1 4.77778V35M23 35H1M23 35H15.1429M1 35H8.85715M15.1429 35V25.5556C15.1429 25.0546 14.9773 24.5741 14.6826 24.2199C14.3879 23.8657 13.9882 23.6667 13.5714 23.6667H10.4286C10.0118 23.6667 9.61211 23.8657 9.31741 24.2199C9.02271 24.5741 8.85715 25.0546 8.85715 25.5556V35M15.1429 35H8.85715M6.3037 10.4034H7.87513M6.3037 17.9589H7.87513M11.3326 10.4034H12.904M11.3326 17.9589H12.904M6.3037 14.3043H7.87513M11.3326 14.3043H12.904M6.3037 7.28261H7.87513M11.3326 7.28261H12.904M15.7326 10.4034H17.304M15.7326 17.9589H17.304M15.7326 14.3043H17.304M15.7326 7.28261H17.304" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>  
+                                </div>
+                            </div></li></a>
+                        </ul>
+                    </div>
 
                 </div>
 
 
                 <!-- ................MAIN CONTENT............... -->
-                <div id="contentbox" class="bg-black/25 p-2 mb-52">
+                <div id="contentbox" class="bg-white/50 dark:bg-black/25 p-2 mb-52">
                     <!-- ................SECTION ONE............... -->
                     <section id="oneSec" class="grid grid-cols-12 gap-2">
+
+                        <!-- ................IMG SLIDER............... -->
+                        <div id="speshial" class="flex items-center col-span-12 md:col-span-2 max-h-72 rounded-lg overflow-hidden shadow-lg">
+                            <img src="./assets/images/mosque.jpg" class="w-full" alt="">
+                        </div>
+
                         <!-- ................MAIN SLIDER............... -->
-                        <div id="mainSlider" class="col-span-12 md:col-span-8 h-full">
+                        <div id="mainSlider" class="col-span-12 md:col-span-6 h-full shadow-lg">
                             <div id="slideItem" class="grid grid-cols-12 bg-gradient-to-br from-teal-300 via-teal-500 to-teal-700 p-3 rounded-lg h-full">
                                 <div class="right flex justify-center flex-col col-span-7 inline-block">
-                                    <h3 class="text-xl lg:text-4xl font-bold">سامانه آموزشی موسسه علمی تربیتی آوای توحید</h3>
+                                    <h3 class="text-xl lg:text-4xl font-bold text-white">سامانه آموزشی موسسه علمی تربیتی آوای توحید</h3>
                                     <p class="text-justify md:text-lg xl:text-xl md:font-bold text-gray-900 font-medium">تولید محتوا آموزشی ،پژوهشی  سبک زندگی اسلامی، معنویت و اخلاق براساس اندیشه های فلسفی ، عرفانی</p>
                                 </div>
                                 <div class="left flex justify-center flex-col col-span-5 inline-block">
@@ -222,40 +239,64 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <!-- ................SLIDE SIDE............... -->
-                        <div id="sideSlide" class="grid grid-cols-2 md:grid-cols-1 gap-2 col-span-12 md:col-span-4">
-                            <div id="sideSlidBox" class="grid grid-cols-12 col-span-1 bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-600 p-1 md:p-3 rounded-lg h-full">
-                                <div class="right flex justify-center flex-col col-span-8 inline-block">
-                                    <h3 class="text-xl lg:text-4xl font-bold text-gray-900">هور و نصر</h3>
-                                    <p class="md:text-lg xl:text-xl md:font-bold text-gray-900 font-medium">
-                                     دوره های جایگزین مجازات حبس اداره کل دادگستری قم
-                                    </p>
-                                </div>
-                                <div class="left flex justify-center flex-col col-span-4 inline-block">
+                        <ul  id="sideSlide" class="grid grid-cols-2 gap-2 col-span-12 md:col-span-4">
+
+                                <a href=""><li class=""><div id="sideSlidBox" class="shadow-lg flex justify-between p-5 md:p-11 rounded-lg bg-gradient-to-br from-emerald-300 via-emerald-400 to-emerald-600">
+                                    <div class="right flex justify-center flex-col md:col-span-3 inline-block">
+                                        <h3 class="text-lg md:text-2xl font-bold text-gray-900">
+            حضوری
+                                        </h3>
+                                    </div>
+                                    <div class="left md:flex justify-center flex-col md:col-span-1 inline-block">
+                                        <svg class="w-10 h-full" viewBox="0 0 37 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 35.5V19.575C9.98009 13.854 13.6042 11.1946 18 9.5C23.8934 11.9255 26.9924 15.8024 28 19.575V35.5M1 41V16.5C4.46515 7.69848 10.8074 3.60715 18.5 1C28.8134 4.73148 34.2366 10.6959 36 16.5V41C29.2674 36.7801 25.6976 35.1882 18 33.5C10.5836 34.5713 6.53546 36.3367 1 41Z" stroke="black"/>
+                                        </svg>
+                                    </div>
+                                </div></li></a>
+        
+                                <a href=""><li class=""><div id="sideSlidBox" class="shadow-lg flex justify-between p-6 md:p-11 rounded-lg bg-gradient-to-br from-cyan-300 via-cyan-400 to-cyan-600">
+                                    <div class="right flex justify-center flex-col md:col-span-2 inline-block">
+                                        <h3 class="text-lg md:text-2xl font-bold text-gray-900">
+            مجازی
+                                        </h3>
+                                    </div>
+                                    <div class="left md:flex justify-center flex-col md:col-span-1 inline-block">
+                                        <svg class="w-14 h-full" viewBox="0 0 43 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 23.5H41M14.5 32.5H17.5M17.5 32.5V27.5M17.5 32.5H26M26 32.5H29M26 32.5V27.5M40.5 23.5H42M3 28H40C41.1046 28 42 27.1046 42 26V3C42 1.89543 41.1046 1 40 1H3C1.89543 1 1 1.89543 1 3V26C1 27.1046 1.89543 28 3 28Z" stroke="black"/>
+                                            </svg>           
+                                    </div>
+                                </div></li></a>
+        
+                                <a href=""><li class=""><div id="sideSlidBox" class="shadow-lg flex justify-between p-5 md:p-11 rounded-lg bg-gradient-to-br from-purple-300 via-purple-400 to-purple-600">
+                                    <div class="right flex justify-center flex-col md:col-span-3 inline-block">
+                                        <h3 class="text-lg md:text-2xl font-bold text-gray-900">
+            بین الملل
+                                        </h3>
+                                    </div>
+                                    <div class="left md:flex justify-center flex-col md:col-span-1 inline-block">
+                                        <svg class="w-14 h-full" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M45.972 8.57108C41.0491 3.64825 34.3723 0.882629 27.4104 0.882629C20.4485 0.882629 13.7717 3.64825 8.84886 8.57108C3.92603 13.4939 1.16042 20.1707 1.16042 27.1326C1.16042 30.5798 1.83939 33.9933 3.15858 37.1781C4.47776 40.3629 6.41133 43.2566 8.84886 45.6942C11.2864 48.1317 14.1802 50.0653 17.365 51.3845C20.5498 52.7037 23.9632 53.3826 27.4104 53.3826C30.8576 53.3826 34.2711 52.7037 37.4559 51.3845C40.6407 50.0653 43.5344 48.1317 45.972 45.6942C48.4095 43.2566 50.3431 40.3629 51.6623 37.1781C52.9814 33.9933 53.6604 30.5798 53.6604 27.1326C53.6604 20.1707 50.8948 13.4939 45.972 8.57108ZM45.972 8.57108L50.9304 15.466H47.8271C46.28 15.466 44.7963 16.0805 43.7023 17.1745C42.6083 18.2685 41.9938 19.7522 41.9938 21.2993C41.9938 22.8464 41.3792 24.3301 40.2852 25.4241C39.1912 26.518 37.7075 27.1326 36.1604 27.1326C34.6133 27.1326 33.1296 26.518 32.0356 25.4241C30.9417 24.3301 30.3271 22.8464 30.3271 21.2993C30.3271 19.7522 29.7125 18.2685 28.6185 17.1745C27.5246 16.0805 26.0408 15.466 24.4938 15.466H23.0354C21.1015 15.466 19.2469 14.6977 17.8794 13.3303C16.512 11.9628 15.7438 10.1082 15.7438 8.1743V3.60971L20.6604 1.76526L25.6604 0.940978L31.1604 1.15176L36.1604 2.38388L41.339 4.88263L45.972 8.57108ZM1.32083 24.216H6.99375C8.54085 24.216 10.0246 24.8305 11.1185 25.9245C12.2125 27.0185 12.8271 28.5022 12.8271 30.0493V32.966C12.8271 34.5131 13.4417 35.9968 14.5356 37.0908C15.6296 38.1847 17.1133 38.7993 18.6604 38.7993C20.2075 38.7993 21.6912 39.4139 22.7852 40.5078C23.8792 41.6018 24.4938 43.0855 24.4938 44.6326V53.2222C8.30748 49.438 1.13999 40.4688 1.32083 24.216ZM36.1604 51.8893V44.6326C36.1604 43.0855 36.775 41.6018 37.869 40.5078C38.9629 39.4139 40.4467 38.7993 41.9938 38.7993H50.9304C47.097 45.7719 43.8167 48.5937 36.1604 51.8893Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>   
+                                    </div>
+                                </div></li></a>
                                 
-                                        <object data="./assets/svgicon/dadgostari.svg" type="image/svg+xml" ></object>
-                                        <!-- height="3rem" width="4rem" -->
-                                </div>
-                            </div>
-                            <div id="sideSlidBox" class="grid grid-cols-12 col-span-1 bg-gradient-to-br from-emerald-300 via-emerald-500 to-emerald-600 p-1 md:p-3 rounded-lg h-full">
-                                <div class="right flex justify-center flex-col col-span-8 inline-block">
-                                    <h3 class="text-xl lg:text-4xl font-bold ">بین الملل</h3>
-                                    <p class="md:text-lg xl:text-xl md:font-bold text-gray-900 font-medium">
-                                        تحقق تمدن نوین اسلامی بوسیله ظرفیت بین المللی
-                                    </p>
-                                </div>
-                                <div class="left flex justify-center flex-col col-span-4 inline-block text-black">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                      </svg>
-                                    
-                                </div>
-                            </div>
-                        
-                            <!-- <div class="sideSlidBox col-span-1 rounded-lg overflow-hidden">
-                                <img src="./assets/images/s2.webp" alt="" class="h-full">
-                            </div> -->
-                        </div>
+                                <a href=""><li class=""><div id="sideSlidBox" class="shadow-lg flex justify-between p-5 md:p-11 rounded-lg bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-600">
+                                    <div class="right flex justify-center flex-col md:col-span-3 inline-block">
+                                        <h3 class="text-lg md:text-2xl font-bold text-gray-900">
+            سازمان ها
+                                        </h3>
+                                    </div>
+                                    <div class="left md:flex justify-center flex-col md:col-span-1 inline-block">
+                                        <svg class="w-9 h-full" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23 35V4.77778C23 3.77585 22.6689 2.81496 22.0795 2.10649C21.4901 1.39801 20.6907 1 19.8571 1H4.14286C3.30932 1 2.50992 1.39801 1.92052 2.10649C1.33112 2.81496 1 3.77585 1 4.77778V35M23 35H1M23 35H15.1429M1 35H8.85715M15.1429 35V25.5556C15.1429 25.0546 14.9773 24.5741 14.6826 24.2199C14.3879 23.8657 13.9882 23.6667 13.5714 23.6667H10.4286C10.0118 23.6667 9.61211 23.8657 9.31741 24.2199C9.02271 24.5741 8.85715 25.0546 8.85715 25.5556V35M15.1429 35H8.85715M6.3037 10.4034H7.87513M6.3037 17.9589H7.87513M11.3326 10.4034H12.904M11.3326 17.9589H12.904M6.3037 14.3043H7.87513M11.3326 14.3043H12.904M6.3037 7.28261H7.87513M11.3326 7.28261H12.904M15.7326 10.4034H17.304M15.7326 17.9589H17.304M15.7326 14.3043H17.304M15.7326 7.28261H17.304" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>  
+                                    </div>
+                                </div></li></a>
+                            
+                        </ul>
                     </section>
                     
 
@@ -266,7 +307,7 @@
                         <div id="productSec" class="">
                             <!-- grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 -->
                             <h2 class="flex items-center gap-2 p-2 text-xl font-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                   </svg>محبوب ترین دوره ها</h2>
 
@@ -277,7 +318,7 @@
                                     <!-- ................start SLIDE............... -->
                                     <div class="swiper-slide">
                                       <!-- ................ITEM............... -->
-                                        <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
+                                        <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white shadow-lg dark:bg-white/30 rounded-lg">
                                             <!-- ................ITEM NAME............... -->
                                             <div id="prodTitle" class="flex items-center gap-2">
                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
@@ -320,7 +361,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="bg-blue-600 py-1 rounded-md text-center font-bold w-full">
-                                                    <a href="" class="">ثبت نام و شروع دوره</a>
+                                                    <a href="" class="text-white">ثبت نام و شروع دوره</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -329,7 +370,7 @@
                                     <!-- ................start SLIDE............... -->
                                     <div class="swiper-slide">
                                         <!-- ................ITEM............... -->
-                                        <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
+                                        <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white shadow-lg dark:bg-white/30 rounded-lg">
                                             <!-- ................ITEM NAME............... -->
                                             <div id="prodTitle" class="flex items-center gap-2">
                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
@@ -372,7 +413,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="bg-blue-600 py-1 rounded-md text-center font-bold w-full">
-                                                    <a href="" class="">ثبت نام و شروع دوره</a>
+                                                    <a href="" class="text-white">ثبت نام و شروع دوره</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -381,7 +422,7 @@
                                     <!-- ................start SLIDE............... -->
                                     <div class="swiper-slide">
                                         <!-- ................ITEM............... -->
-                                        <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
+                                        <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white shadow-lg dark:bg-white/30 rounded-lg">
                                             <!-- ................ITEM NAME............... -->
                                             <div id="prodTitle" class="flex items-center gap-2">
                                                 <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
@@ -424,7 +465,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="bg-blue-600 py-1 rounded-md text-center font-bold w-full">
-                                                    <a href="" class="">ثبت نام و شروع دوره</a>
+                                                    <a href="" class="text-white">ثبت نام و شروع دوره</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -446,570 +487,372 @@
 
                     <!-- ................MAREFAT SEC............... -->
                     <section class="mt-5">
-                        <h2 class="flex items-center gap-2 p-2 text-xl font-bold">
-                            <svg 
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                class="h-8 w-8">
-                                <image  x="0px" y="0px" class="h-8 w-8"  xlink:href="data:img/png;base64,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" />
-                                </svg>
-                            دوره های معرفتی
-                        </h2>
 
-                        <div id="marefatiSlider" class="swiper">
-                            <div class="swiper-wrapper">
-                                <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                  <!-- ................ITEM............... -->
-                                    <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                        <!-- ................ITEM NAME............... -->
-                                        <div id="prodTitle" class="flex items-center gap-2">
-                                            <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                <img src="./assets/images/1 (1).jpg" alt="">
-                                            </div></a>
-                                            <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                        </div>
-                                        <!-- ................ITEM CONTENT & IMG............... -->
-                                        <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                            <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                <img src="./assets/images/hadis.webp" alt="" class="w-full h-full">
-                                            </div>
-                                            <p class="col-span-3">
-                                                يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                            </p>
-                                        </div>
-                                        <!-- ................ITEM OPTION............... -->
-                                        <div id="option" class="flex flex-col">
-                                            <div id="ProInfo">
-                                                <ul>
-                                                    <ul class="p-2 flex justify-center gap-2">
-                                                        <a href=""><li class="flex hover:text-gray-300">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                            </svg>
-                                                        5ساعت
-                                                        </li></a>
-                                                        <a href=""><li class="flex hover:text-gray-300">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                            </svg>
-                                                        200جلسه
-                                                        </li></a>
-                                                        <a href=""><li class="flex hover:text-gray-300">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                            </svg>
-                                                        500دانشپژوه
-                                                        </li></a>
-                                                        
-                                                    </ul>
-                                                </ul>
-                                            </div>
-                                            <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                        </div>
-                                    </div>
+                        <div id="productSec" class="">
+                            <!-- grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 -->
+                            <h2 class="flex items-center gap-2 p-2 text-xl font-bold">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    class="h-8 w-8">
+                                    <image  x="0px" y="0px" class="h-8 w-8"  xlink:href="data:img/png;base64,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" />
+                                    </svg>
+                                دوره های معرفتی
+                            </h2>
+
+                            <div id="marefatSlide" class="swiper">
+                                <div class="swiper-wrapper">
+
+
+                                     <!-- ................start SLIDE............... -->
+                                     <div class="swiper-slide">
+                                        <!-- ................ITEM............... -->
+                                          <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white shadow-lg dark:bg-white/30 rounded-lg">
+                                              <!-- ................ITEM NAME............... -->
+                                              <div id="prodTitle" class="flex items-center gap-2">
+                                                  <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                      <img src="./assets/images/1 (1).jpg" alt="">
+                                                  </div></a>
+                                                  <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                              </div>
+                                              <!-- ................ITEM CONTENT & IMG............... -->
+                                              <div id="content" class="flex flex-col gap-2">
+                                                  <div id="postImg" class="rounded-md overflow-hidden">
+                                                      <img src="./assets/images/hadis.webp" alt="" class="w-full">
+                                                  </div>
+                                                  <p class="">يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)</p>
+                                              </div>
+                                              <!-- ................ITEM OPTION............... -->
+                                              <div id="option" class="flex flex-col">
+                                                  <div id="ProInfo">
+                                                      <ul>
+                                                          <ul class="p-2 flex justify-center gap-2  cursor-help">
+                                                              <li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                  </svg>
+                                                              5ساعت
+                                                              </li>
+                                                              <li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                                                  </svg>
+                                                              200جلسه
+                                                              </li>
+                                                              <li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                                  </svg>
+                                                              500دانشپژوه
+                                                              </li>
+                                                              
+                                                          </ul>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="bg-blue-600 py-1 rounded-md text-center font-bold w-full">
+                                                      <a href="" class="text-white">ثبت نام و شروع دوره</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- ................End SLIDE............... -->
+                                      <!-- ................start SLIDE............... -->
+                                      <div class="swiper-slide">
+                                          <!-- ................ITEM............... -->
+                                          <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white shadow-lg dark:bg-white/30 rounded-lg">
+                                              <!-- ................ITEM NAME............... -->
+                                              <div id="prodTitle" class="flex items-center gap-2">
+                                                  <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                      <img src="./assets/images/1 (4).jpg" alt="">
+                                                  </div></a>
+                                                  <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                              </div>
+                                              <!-- ................ITEM CONTENT & IMG............... -->
+                                              <div id="content" class="flex flex-col gap-2">
+                                                  <div id="postImg" class="rounded-md overflow-hidden">
+                                                      <img src="./assets/images/marefat.webp" alt="" class="w-full">
+                                                  </div>
+                                                  <p class="">يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)</p>
+                                              </div>
+                                              <!-- ................ITEM OPTION............... -->
+                                              <div id="option" class="flex flex-col">
+                                                  <div id="ProInfo">
+                                                      <ul>
+                                                          <ul class="p-2 flex justify-center gap-2">
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                  </svg>
+                                                              5ساعت
+                                                              </li></a>
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                                                  </svg>
+                                                              200جلسه
+                                                              </li></a>
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                                  </svg>
+                                                              500دانشپژوه
+                                                              </li></a>
+                                                              
+                                                          </ul>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="bg-blue-600 py-1 rounded-md text-center font-bold w-full">
+                                                      <a href="" class="text-white">ثبت نام و شروع دوره</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- ................End SLIDE............... -->
+                                      <!-- ................start SLIDE............... -->
+                                      <div class="swiper-slide">
+                                          <!-- ................ITEM............... -->
+                                          <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white shadow-lg dark:bg-white/30 rounded-lg">
+                                              <!-- ................ITEM NAME............... -->
+                                              <div id="prodTitle" class="flex items-center gap-2">
+                                                  <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                      <img src="./assets/images/1 (2).jpg" alt="">
+                                                  </div></a>
+                                                  <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                              </div>
+                                              <!-- ................ITEM CONTENT & IMG............... -->
+                                              <div id="content" class="flex flex-col gap-2">
+                                                  <div id="postImg" class="rounded-md overflow-hidden">
+                                                      <img src="./assets/images/sahifa.webp" alt="" class="w-full">
+                                                  </div>
+                                                  <p class="">يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)</p>
+                                              </div>
+                                              <!-- ................ITEM OPTION............... -->
+                                              <div id="option" class="flex flex-col">
+                                                  <div id="ProInfo">
+                                                      <ul>
+                                                          <ul class="p-2 flex justify-center gap-2">
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                  </svg>
+                                                              5ساعت
+                                                              </li></a>
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                                                  </svg>
+                                                              200جلسه
+                                                              </li></a>
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                                  </svg>
+                                                              500دانشپژوه
+                                                              </li></a>
+                                                              
+                                                          </ul>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="bg-blue-600 py-1 rounded-md text-center font-bold w-full">
+                                                      <a href="" class="text-white">ثبت نام و شروع دوره</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- ................End SLIDE............... -->
+                                      
+
                                 </div>
-                                <!-- ................End SLIDE............... -->
-
-                                  <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                    <!-- ................ITEM............... -->
-                                      <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                          <!-- ................ITEM NAME............... -->
-                                          <div id="prodTitle" class="flex items-center gap-2">
-                                              <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                  <img src="./assets/images/1 (3).jpg" alt="">
-                                              </div></a>
-                                              <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                          </div>
-                                          <!-- ................ITEM CONTENT & IMG............... -->
-                                          <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                              <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                  <img src="./assets/images/marefat.webp" alt="" class="w-full h-full">
-                                              </div>
-                                              <p class="col-span-3">
-                                                  يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                              </p>
-                                          </div>
-                                          <!-- ................ITEM OPTION............... -->
-                                          <div id="option" class="flex flex-col">
-                                              <div id="ProInfo">
-                                                  <ul>
-                                                      <ul class="p-2 flex justify-center gap-2">
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                              </svg>
-                                                          5ساعت
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                              </svg>
-                                                          200جلسه
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                              </svg>
-                                                          500دانشپژوه
-                                                          </li></a>
-                                                          
-                                                      </ul>
-                                                  </ul>
-                                              </div>
-                                              <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- ................End SLIDE............... -->
-
-                                  <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                    <!-- ................ITEM............... -->
-                                      <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                          <!-- ................ITEM NAME............... -->
-                                          <div id="prodTitle" class="flex items-center gap-2">
-                                              <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                  <img src="./assets/images/1 (4).jpg" alt="">
-                                              </div></a>
-                                              <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                          </div>
-                                          <!-- ................ITEM CONTENT & IMG............... -->
-                                          <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                              <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                  <img src="./assets/images/sahifa.webp" alt="" class="w-full h-full">
-                                              </div>
-                                              <p class="col-span-3">
-                                                  يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                              </p>
-                                          </div>
-                                          <!-- ................ITEM OPTION............... -->
-                                          <div id="option" class="flex flex-col">
-                                              <div id="ProInfo">
-                                                  <ul>
-                                                      <ul class="p-2 flex justify-center gap-2">
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                              </svg>
-                                                          5ساعت
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                              </svg>
-                                                          200جلسه
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                              </svg>
-                                                          500دانشپژوه
-                                                          </li></a>
-                                                          
-                                                      </ul>
-                                                  </ul>
-                                              </div>
-                                              <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- ................End SLIDE............... -->
-
-                                  <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                    <!-- ................ITEM............... -->
-                                      <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                          <!-- ................ITEM NAME............... -->
-                                          <div id="prodTitle" class="flex items-center gap-2">
-                                              <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                  <img src="./assets/images/1 (1).jpg" alt="">
-                                              </div></a>
-                                              <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                          </div>
-                                          <!-- ................ITEM CONTENT & IMG............... -->
-                                          <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                              <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                  <img src="./assets/images/hadis.webp" alt="" class="w-full h-full">
-                                              </div>
-                                              <p class="col-span-3">
-                                                  يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                              </p>
-                                          </div>
-                                          <!-- ................ITEM OPTION............... -->
-                                          <div id="option" class="flex flex-col">
-                                              <div id="ProInfo">
-                                                  <ul>
-                                                      <ul class="p-2 flex justify-center gap-2">
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                              </svg>
-                                                          5ساعت
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                              </svg>
-                                                          200جلسه
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                              </svg>
-                                                          500دانشپژوه
-                                                          </li></a>
-                                                          
-                                                      </ul>
-                                                  </ul>
-                                              </div>
-                                              <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- ................End SLIDE............... -->
-
-                                  <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                    <!-- ................ITEM............... -->
-                                      <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                          <!-- ................ITEM NAME............... -->
-                                          <div id="prodTitle" class="flex items-center gap-2">
-                                              <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                  <img src="./assets/images/1 (4).jpg" alt="">
-                                              </div></a>
-                                              <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                          </div>
-                                          <!-- ................ITEM CONTENT & IMG............... -->
-                                          <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                              <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                  <img src="./assets/images/sahifa.webp" alt="" class="w-full h-full">
-                                              </div>
-                                              <p class="col-span-3">
-                                                  يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                              </p>
-                                          </div>
-                                          <!-- ................ITEM OPTION............... -->
-                                          <div id="option" class="flex flex-col">
-                                              <div id="ProInfo">
-                                                  <ul>
-                                                      <ul class="p-2 flex justify-center gap-2">
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                              </svg>
-                                                          5ساعت
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                              </svg>
-                                                          200جلسه
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                              </svg>
-                                                          500دانشپژوه
-                                                          </li></a>
-                                                          
-                                                      </ul>
-                                                  </ul>
-                                              </div>
-                                              <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- ................End SLIDE............... -->
+                                <div class="swiper-button-next text-white "></div>
+                                <div class="swiper-button-prev text-white "></div>
+                                <!-- <div class="swiper-pagination"></div> -->
                             </div>
-                            <div class="swiper-button-next text-white "></div>
-                            <div class="swiper-button-prev text-white "></div>
-                            <!-- <div class="swiper-pagination"></div> -->
+                            
                         </div>
                     </section>
                     <!-- ................HEKMAT SEC............... -->
                     <section class="mt-5">
-                        <h2 class="flex items-center gap-2 p-2 text-xl font-bold">
-                            <svg 
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                class="h-8 w-8">
-                                <image  x="0px" y="0px" class="h-8 w-8"  xlink:href="data:img/png;base64,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" />
-                        </svg>
-                            دوره های حکمت
-                        </h2>
 
-                        <div id="hekmatSlider" class="swiper">
-                            <div class="swiper-wrapper">
-                                <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                  <!-- ................ITEM............... -->
-                                    <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                        <!-- ................ITEM NAME............... -->
-                                        <div id="prodTitle" class="flex items-center gap-2">
-                                            <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                <img src="./assets/images/1 (1).jpg" alt="">
-                                            </div></a>
-                                            <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                        </div>
-                                        <!-- ................ITEM CONTENT & IMG............... -->
-                                        <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                            <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                <img src="./assets/images/hadis.webp" alt="" class="w-full h-full">
-                                            </div>
-                                            <p class="col-span-3">
-                                                يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                            </p>
-                                        </div>
-                                        <!-- ................ITEM OPTION............... -->
-                                        <div id="option" class="flex flex-col">
-                                            <div id="ProInfo">
-                                                <ul>
-                                                    <ul class="p-2 flex justify-center gap-2">
-                                                        <a href=""><li class="flex hover:text-gray-300">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                            </svg>
-                                                        5ساعت
-                                                        </li></a>
-                                                        <a href=""><li class="flex hover:text-gray-300">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                            </svg>
-                                                        200جلسه
-                                                        </li></a>
-                                                        <a href=""><li class="flex hover:text-gray-300">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                            </svg>
-                                                        500دانشپژوه
-                                                        </li></a>
-                                                        
-                                                    </ul>
-                                                </ul>
-                                            </div>
-                                            <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                        </div>
-                                    </div>
+                        <div id="productSec" class="">
+                            <!-- grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 -->
+                            <h2 class="flex items-center gap-2 p-2 text-xl font-bold">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    class="h-8 w-8">
+                                    <image  x="0px" y="0px" class="h-8 w-8"  xlink:href="data:img/png;base64,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" />
+                            </svg>
+                                دوره های حکمت
+                            </h2>
+
+                            <div id="hekmatSlider" class="swiper">
+                                <div class="swiper-wrapper">
+
+
+                                     <!-- ................start SLIDE............... -->
+                                     <div class="swiper-slide">
+                                        <!-- ................ITEM............... -->
+                                          <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white shadow-lg dark:bg-white/30 rounded-lg">
+                                              <!-- ................ITEM NAME............... -->
+                                              <div id="prodTitle" class="flex items-center gap-2">
+                                                  <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                      <img src="./assets/images/1 (1).jpg" alt="">
+                                                  </div></a>
+                                                  <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                              </div>
+                                              <!-- ................ITEM CONTENT & IMG............... -->
+                                              <div id="content" class="flex flex-col gap-2">
+                                                  <div id="postImg" class="rounded-md overflow-hidden">
+                                                      <img src="./assets/images/hadis.webp" alt="" class="w-full">
+                                                  </div>
+                                                  <p class="">يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)</p>
+                                              </div>
+                                              <!-- ................ITEM OPTION............... -->
+                                              <div id="option" class="flex flex-col">
+                                                  <div id="ProInfo">
+                                                      <ul>
+                                                          <ul class="p-2 flex justify-center gap-2  cursor-help">
+                                                              <li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                  </svg>
+                                                              5ساعت
+                                                              </li>
+                                                              <li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                                                  </svg>
+                                                              200جلسه
+                                                              </li>
+                                                              <li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                                  </svg>
+                                                              500دانشپژوه
+                                                              </li>
+                                                              
+                                                          </ul>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="bg-blue-600 py-1 rounded-md text-center font-bold w-full">
+                                                      <a href="" class="text-white">ثبت نام و شروع دوره</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- ................End SLIDE............... -->
+                                      <!-- ................start SLIDE............... -->
+                                      <div class="swiper-slide">
+                                          <!-- ................ITEM............... -->
+                                          <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white shadow-lg dark:bg-white/30 rounded-lg">
+                                              <!-- ................ITEM NAME............... -->
+                                              <div id="prodTitle" class="flex items-center gap-2">
+                                                  <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                      <img src="./assets/images/1 (4).jpg" alt="">
+                                                  </div></a>
+                                                  <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                              </div>
+                                              <!-- ................ITEM CONTENT & IMG............... -->
+                                              <div id="content" class="flex flex-col gap-2">
+                                                  <div id="postImg" class="rounded-md overflow-hidden">
+                                                      <img src="./assets/images/marefat.webp" alt="" class="w-full">
+                                                  </div>
+                                                  <p class="">يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)</p>
+                                              </div>
+                                              <!-- ................ITEM OPTION............... -->
+                                              <div id="option" class="flex flex-col">
+                                                  <div id="ProInfo">
+                                                      <ul>
+                                                          <ul class="p-2 flex justify-center gap-2">
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                  </svg>
+                                                              5ساعت
+                                                              </li></a>
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                                                  </svg>
+                                                              200جلسه
+                                                              </li></a>
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                                  </svg>
+                                                              500دانشپژوه
+                                                              </li></a>
+                                                              
+                                                          </ul>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="bg-blue-600 py-1 rounded-md text-center font-bold w-full">
+                                                      <a href="" class="text-white">ثبت نام و شروع دوره</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- ................End SLIDE............... -->
+                                      <!-- ................start SLIDE............... -->
+                                      <div class="swiper-slide">
+                                          <!-- ................ITEM............... -->
+                                          <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white shadow-lg dark:bg-white/30 rounded-lg">
+                                              <!-- ................ITEM NAME............... -->
+                                              <div id="prodTitle" class="flex items-center gap-2">
+                                                  <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
+                                                      <img src="./assets/images/1 (2).jpg" alt="">
+                                                  </div></a>
+                                                  <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
+                                              </div>
+                                              <!-- ................ITEM CONTENT & IMG............... -->
+                                              <div id="content" class="flex flex-col gap-2">
+                                                  <div id="postImg" class="rounded-md overflow-hidden">
+                                                      <img src="./assets/images/sahifa.webp" alt="" class="w-full">
+                                                  </div>
+                                                  <p class="">يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)</p>
+                                              </div>
+                                              <!-- ................ITEM OPTION............... -->
+                                              <div id="option" class="flex flex-col">
+                                                  <div id="ProInfo">
+                                                      <ul>
+                                                          <ul class="p-2 flex justify-center gap-2">
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                                  </svg>
+                                                              5ساعت
+                                                              </li></a>
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                                                  </svg>
+                                                              200جلسه
+                                                              </li></a>
+                                                              <a href=""><li class="flex hover:text-gray-300">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                                      <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                                  </svg>
+                                                              500دانشپژوه
+                                                              </li></a>
+                                                              
+                                                          </ul>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="bg-blue-600 py-1 rounded-md text-center font-bold w-full">
+                                                      <a href="" class="text-white">ثبت نام و شروع دوره</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- ................End SLIDE............... -->
+                                      
+
                                 </div>
-                                <!-- ................End SLIDE............... -->
-
-                                  <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                    <!-- ................ITEM............... -->
-                                      <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                          <!-- ................ITEM NAME............... -->
-                                          <div id="prodTitle" class="flex items-center gap-2">
-                                              <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                  <img src="./assets/images/1 (3).jpg" alt="">
-                                              </div></a>
-                                              <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                          </div>
-                                          <!-- ................ITEM CONTENT & IMG............... -->
-                                          <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                              <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                  <img src="./assets/images/marefat.webp" alt="" class="w-full h-full">
-                                              </div>
-                                              <p class="col-span-3">
-                                                  يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                              </p>
-                                          </div>
-                                          <!-- ................ITEM OPTION............... -->
-                                          <div id="option" class="flex flex-col">
-                                              <div id="ProInfo">
-                                                  <ul>
-                                                      <ul class="p-2 flex justify-center gap-2">
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                              </svg>
-                                                          5ساعت
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                              </svg>
-                                                          200جلسه
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                              </svg>
-                                                          500دانشپژوه
-                                                          </li></a>
-                                                          
-                                                      </ul>
-                                                  </ul>
-                                              </div>
-                                              <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- ................End SLIDE............... -->
-
-                                  <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                    <!-- ................ITEM............... -->
-                                      <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                          <!-- ................ITEM NAME............... -->
-                                          <div id="prodTitle" class="flex items-center gap-2">
-                                              <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                  <img src="./assets/images/1 (4).jpg" alt="">
-                                              </div></a>
-                                              <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                          </div>
-                                          <!-- ................ITEM CONTENT & IMG............... -->
-                                          <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                              <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                  <img src="./assets/images/sahifa.webp" alt="" class="w-full h-full">
-                                              </div>
-                                              <p class="col-span-3">
-                                                  يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                              </p>
-                                          </div>
-                                          <!-- ................ITEM OPTION............... -->
-                                          <div id="option" class="flex flex-col">
-                                              <div id="ProInfo">
-                                                  <ul>
-                                                      <ul class="p-2 flex justify-center gap-2">
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                              </svg>
-                                                          5ساعت
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                              </svg>
-                                                          200جلسه
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                              </svg>
-                                                          500دانشپژوه
-                                                          </li></a>
-                                                          
-                                                      </ul>
-                                                  </ul>
-                                              </div>
-                                              <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- ................End SLIDE............... -->
-
-                                  <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                    <!-- ................ITEM............... -->
-                                      <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                          <!-- ................ITEM NAME............... -->
-                                          <div id="prodTitle" class="flex items-center gap-2">
-                                              <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                  <img src="./assets/images/1 (1).jpg" alt="">
-                                              </div></a>
-                                              <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                          </div>
-                                          <!-- ................ITEM CONTENT & IMG............... -->
-                                          <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                              <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                  <img src="./assets/images/hadis.webp" alt="" class="w-full h-full">
-                                              </div>
-                                              <p class="col-span-3">
-                                                  يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                              </p>
-                                          </div>
-                                          <!-- ................ITEM OPTION............... -->
-                                          <div id="option" class="flex flex-col">
-                                              <div id="ProInfo">
-                                                  <ul>
-                                                      <ul class="p-2 flex justify-center gap-2">
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                              </svg>
-                                                          5ساعت
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                              </svg>
-                                                          200جلسه
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                              </svg>
-                                                          500دانشپژوه
-                                                          </li></a>
-                                                          
-                                                      </ul>
-                                                  </ul>
-                                              </div>
-                                              <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- ................End SLIDE............... -->
-
-                                  <!-- ................start SLIDE............... -->
-                                <div class="swiper-slide">
-                                    <!-- ................ITEM............... -->
-                                      <div id="productContBox" class="flex flex-col p-2 gap-2 bg-white/30 rounded-lg">
-                                          <!-- ................ITEM NAME............... -->
-                                          <div id="prodTitle" class="flex items-center gap-2">
-                                              <a href=""><div class="w-10 h-10 border border-teal-500 rounded-lg overflow-hidden">
-                                                  <img src="./assets/images/1 (4).jpg" alt="">
-                                              </div></a>
-                                              <a href=""><h3 class="font-bold">حدیث عنوان بصری</h3></a>
-                                          </div>
-                                          <!-- ................ITEM CONTENT & IMG............... -->
-                                          <div class="content grid grid-cols-5 grid-flow-col gap-2">
-                                              <div id="postImg" class="col-span-2 rounded-md overflow-hidden">
-                                                  <img src="./assets/images/sahifa.webp" alt="" class="w-full h-full">
-                                              </div>
-                                              <p class="col-span-3">
-                                                  يكى از مآخذ و مصادر علمى حكمت متعاليه، معروف و مشهور به اسفار صدر المتألهين است.(علامه حسن زاده آملی)
-                                              </p>
-                                          </div>
-                                          <!-- ................ITEM OPTION............... -->
-                                          <div id="option" class="flex flex-col">
-                                              <div id="ProInfo">
-                                                  <ul>
-                                                      <ul class="p-2 flex justify-center gap-2">
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                              </svg>
-                                                          5ساعت
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                                                              </svg>
-                                                          200جلسه
-                                                          </li></a>
-                                                          <a href=""><li class="flex hover:text-gray-300">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                                              </svg>
-                                                          500دانشپژوه
-                                                          </li></a>
-                                                          
-                                                      </ul>
-                                                  </ul>
-                                              </div>
-                                              <a href="" class="bg-blue-600 py-1 rounded-md mr-2 text-center font-bold">ثبت نام و شروع دوره</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- ................End SLIDE............... -->
+                                <div class="swiper-button-next text-white "></div>
+                                <div class="swiper-button-prev text-white "></div>
+                                <!-- <div class="swiper-pagination"></div> -->
                             </div>
-                            <div class="swiper-button-next text-white "></div>
-                            <div class="swiper-button-prev text-white "></div>
-                            <!-- <div class="swiper-pagination"></div> -->
+                            
                         </div>
                     </section>
                     <!-- ................PARTNER SEC............... -->
@@ -1028,91 +871,91 @@
                             <div class="swiper-wrapper">
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/1.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/2.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/3.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/4.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/5.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/6.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/7.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/12.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/8.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/10.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/9.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/11.png" alt="">
                                     </div>
                                 </div>
                                 <!-- ................End SLIDE............... -->
                                 <!-- ................start SLIDE............... -->
                                 <div class="swiper-slide">
-                                    <div id="partnerLogo" class="bg-white/30 rounded-lg py-3">
+                                    <div id="partnerLogo" class="bg-white shadow-lg dark:bg-white/30 rounded-lg py-3">
                                         <img src="./assets/images/logo/13.png" alt="">
                                     </div>
                                 </div>
@@ -1148,9 +991,9 @@
           loop: true,
           mousewheel: true,
           breakpoints: {
-          640: {
+          300: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 3,
@@ -1168,8 +1011,10 @@
     </script>
     <!-- ................SLIDE............... -->
     <script>
-        var swiper = new Swiper("#marefatiSlider", {
-          cssMode: true,
+        var swiper = new Swiper("#marefatSlide", {
+            cssMode: true,
+          slidesPerView: 1,
+          spaceBetween: 20,
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -1177,17 +1022,17 @@
           loop: true,
           mousewheel: true,
           breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
+          300: {
+            slidesPerView: 2,
+            spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2,
-            spaceBetween: 5,
+            slidesPerView: 3,
+            spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 3,
-            spaceBetween: 8,
+            slidesPerView: 5,
+            spaceBetween: 30,
           },
         },
           mousewheel: true,
@@ -1197,7 +1042,9 @@
     <!-- ................SLIDE............... -->
     <script>
         var swiper = new Swiper("#hekmatSlider", {
-          cssMode: true,
+            cssMode: true,
+          slidesPerView: 1,
+          spaceBetween: 20,
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -1205,17 +1052,17 @@
           loop: true,
           mousewheel: true,
           breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
+          300: {
+            slidesPerView: 2,
+            spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2,
-            spaceBetween: 5,
+            slidesPerView: 3,
+            spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 3,
-            spaceBetween: 8,
+            slidesPerView: 5,
+            spaceBetween: 30,
           },
         },
           mousewheel: true,
