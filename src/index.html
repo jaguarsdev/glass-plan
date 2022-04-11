@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" class="">
+<html id="htmlb" lang="fa" dir="rtl" class="hi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -989,12 +989,12 @@
     </div>
     
     <script src="./assets/js/swiper.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    
     <!-- ................SLIDE............... -->
     <script>
         var swiper = new Swiper("#mahbobSlide", {
-          cssMode: true,
-          slidesPerView: 1,
+            cssMode: true,
+            slidesPerView: 1,
           spaceBetween: 20,
           navigation: {
             nextEl: ".swiper-button-next",
@@ -1115,5 +1115,17 @@
         
         
     </script>
+    <script>
+        document.querySelector('.dayNight input').addEventListener('click', () => {
+            if( document.getElementById('htmlb').classList.value.indexOf('dark') < 0 ){
+                document.getElementById('htmlb').classList.add('dark')
+            } else {
+                document.getElementById('htmlb').classList.remove('dark')
+            }
+        })
+
+    </script>
+    
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
